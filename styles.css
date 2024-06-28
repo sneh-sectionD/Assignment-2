@@ -1,0 +1,225 @@
+/* General styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header and Navigation styles */
+header {
+    background-color: #1a1a2e;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: center; /* Center the navigation items */
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline effect on hover */
+}
+
+/* Hero Section styles */
+.hero {
+    background: url('images/sports-hero.jpg') no-repeat center center/cover; /* Background image with cover effect */
+    color: #fff;
+    text-align: center; /* Centered text */
+    padding: 100px 20px; /* Padding for spacing */
+}
+
+.hero h1 {
+    font-size: 3em; /* Large font size for the heading */
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em; /* Slightly larger font size for the paragraph */
+}
+
+.hero .btn {
+    display: inline-block; /* Inline-block for button styling */
+    margin-top: 20px;
+    padding: 10px 20px; /* Padding for button size */
+    background-color: #e94560; /* Button background color */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.hero .btn:hover {
+    background-color: #0f3460; /* Darker background color on hover */
+}
+
+/* Section styles */
+section {
+    padding: 60px 20px; /* Padding for spacing */
+    text-align: center; /* Centered text */
+}
+
+section h2 {
+    font-size: 2em; /* Large font size for the section heading */
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.2em; /* Slightly larger font size for the paragraph */
+    margin-bottom: 40px; /* Spacing below the paragraph */
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    font-size: 1.2em; /* Font size for list items */
+    margin: 10px 0; /* Spacing between list items */
+}
+
+/* Contact form styles */
+form {
+    max-width: 600px; /* Maximum width for the form */
+    margin: 0 auto; /* Center the form */
+    text-align: left; /* Left-aligned text */
+}
+
+form label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Spacing below labels */
+}
+
+form input, form textarea {
+    width: 100%; /* Full width for inputs and textarea */
+    padding: 10px; /* Padding for inputs and textarea */
+    margin-bottom: 20px; /* Spacing below inputs and textarea */
+    border: 1px solid #ccc; /* Border for inputs and textarea */
+    border-radius: 5px; /* Rounded corners */
+}
+
+form button {
+    display: inline-block; /* Inline-block for button styling */
+    padding: 10px 20px; /* Padding for button size */
+    background-color: #e94560; /* Button background color */
+    color: #fff;
+    border: none;
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+form button:hover {
+    background-color: #0f3460; /* Darker background color on hover */
+}
+
+/* Footer styles */
+footer {
+    background-color: #1a1a2e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    position: fixed; /* Fixed position at the bottom */
+    width: 100%; /* Full width */
+    bottom: 0; /* Align to the bottom */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero h1, .hero p, .hero .btn {
+    animation: fadeIn 2s; /* Fade-in animation for hero section elements */
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Vertical layout for smaller screens */
+        text-align: center;
+    }
+
+    .hero {
+        padding: 60px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2.5em; /* Smaller font size for smaller screens */
+    }
+
+    .hero p {
+        font-size: 1em; /* Smaller font size for smaller screens */
+    }
+
+    .hero .btn {
+        padding: 10px 15px; /* Smaller padding for buttons on smaller screens */
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    section h2 {
+        font-size: 1.8em; /* Smaller font size for section headings on smaller screens */
+    }
+
+    section p, section ul li {
+        font-size: 1em; /* Smaller font size for paragraphs and list items on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column; /* Vertical layout for the smallest screens */
+        text-align: center;
+    }
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h1 {
+        font-size: 2em; /* Smaller font size for the smallest screens */
+    }
+
+    .hero p {
+        font-size: 0.9em; /* Smaller font size for the smallest screens */
+    }
+
+    .hero .btn {
+        padding: 8px 10px; /* Smaller padding for buttons on the smallest screens */
+    }
+
+    section {
+        padding: 30px 20px;
+    }
+
+    section h2 {
+        font-size: 1.6em; /* Smaller font size for section headings on the smallest screens */
+    }
+
+    section p, section ul li {
+        font-size: 0.9em; /* Smaller font size for paragraphs and list items on the smallest screens */
+    }
+}
+
